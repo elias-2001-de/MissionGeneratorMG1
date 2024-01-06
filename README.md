@@ -21,6 +21,7 @@ after compilation
 - [ARGoS3](https://github.com/ilpincy/argos3) (3.0.0-beta48)
 - [argos3-epuck](https://github.com/demiurge-project/argos3-epuck) (v48)
 - [demiurge-epuck-dao](https://github.com/demiurge-project/demiurge-epuck-dao) (master)
+- [lua5.2](https://www.lua.org/) if you are on a dabian bais system you can install lua by running `sudo apt install liblua5.2-dev` 
 
 ### Compilation:
     $ mkdir build
