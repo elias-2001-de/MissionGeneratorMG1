@@ -9,12 +9,12 @@ execute_process(
 #
 # General compilation flags
 #
-set(CMAKE_C_FLAGS                "-Wall -std=c++1z")
+set(CMAKE_C_FLAGS                "-Wall -std=c++1z -I/usr/include/lua5.2")
 set(CMAKE_C_FLAGS_RELEASE        "-Os -DNDEBUG")
 set(CMAKE_C_FLAGS_RELWITHDEBINFO "-Os -ggdb3 -DNDEBUG")
 set(CMAKE_C_FLAGS_DEBUG          "-ggdb3")
 #
-set(CMAKE_CXX_FLAGS                "-Wall -std=c++1z")
+set(CMAKE_CXX_FLAGS                "-Wall -std=c++1z -I/usr/include/lua5.2")
 set(CMAKE_CXX_FLAGS_RELEASE        "-Os -DNDEBUG")
 set(CMAKE_CXX_FLAGS_RELWITHDEBINFO "-Os -ggdb3 -DNDEBUG")
 set(CMAKE_CXX_FLAGS_DEBUG          "-ggdb3")
