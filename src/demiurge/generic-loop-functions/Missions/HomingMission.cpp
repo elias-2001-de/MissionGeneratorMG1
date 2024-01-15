@@ -158,7 +158,7 @@ void HomingMission::PostExperiment() {
 void HomingMission::Initialize() {
   GenericLoopFunctions::Initialize();
 
-  LOG << "TEST" << std::endl;
+  std::cout << "TEST" << std::endl;
 
   std::map<std::string, argos::CAny>::iterator it;
 
