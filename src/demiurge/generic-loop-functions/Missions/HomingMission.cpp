@@ -119,10 +119,6 @@ void HomingMission::PostStep() {
     cEpuckPosition.Set(pcEpuck->GetEmbodiedEntity().GetOriginAnchor().Position.GetX(),
                        pcEpuck->GetEmbodiedEntity().GetOriginAnchor().Position.GetY());
 
-
-   //  auto pos = pcEpuck->GetEmbodiedEntity().GetOriginAnchor().Position;
-   //  LOG << "PosX: " << pos.GetX() << "PosY: " << pos.GetY() << std::endl;  
-
     // Check if robot on home patch
     if (m_pcHome->IsOnPatch(cEpuckPosition)) {
       m_unRobotsAtHome += 1;
@@ -157,8 +153,6 @@ void HomingMission::PostExperiment() {
 
 void HomingMission::Initialize() {
   GenericLoopFunctions::Initialize();
-
-  std::cout << "TEST" << std::endl;
 
   std::map<std::string, argos::CAny>::iterator it;
 
