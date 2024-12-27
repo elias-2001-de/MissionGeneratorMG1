@@ -130,6 +130,8 @@ void HomingMission::PostStep()
 
   CSpace::TMapPerType &tEpuckMap = GetSpace().GetEntitiesByType("epuck");
   CVector2 cEpuckPosition(0, 0);
+
+  int count = 0;
   for (CSpace::TMapPerType::iterator it = tEpuckMap.begin(); it != tEpuckMap.end(); ++it)
   {
     CEPuckEntity *pcEpuck = any_cast<CEPuckEntity *>(it->second);
